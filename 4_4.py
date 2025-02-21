@@ -3,7 +3,7 @@ count1=0
 count2=0
 count3=0
 check_num=0
-pnum=0
+reverse_num=0
 a=str(num)
 no_digits=len(a)
 #prime number
@@ -37,9 +37,9 @@ else:
 #palinedrome
 num3=num
 while (num3):
-    pnum=(pnum*10)+(num3%10)
+    reverse_num=(reverse_num*10)+(num3%10)
     num3=num3//10
-if pnum==num:
+if reverse_num==num:
     print (f"{num} number is palindrome.")
 else:
     print(f"{num} number is not palindrome.")
